@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Movies, Props } from "../types/types";
 import { useAppDispatch } from "../hooks/redux";
-import noPosterHorizontal from "../assets/no-poster-horizontal.png";
 import Slider from "react-slick";
 
 // import required modules
@@ -59,7 +58,6 @@ const CategoryCarousel = ({ title, url }: Props) => {
       const baseURL = 'https://api.themoviedb.org/3/'
       const { data } = await axios.get(baseURL + url);
       setMovies(data.items.slice(0,12));
-      console.log(data)
       setIsLoading(false);
     } catch (err) {
       console.log("hubo un error: ", err);
@@ -104,11 +102,7 @@ const CategoryCarousel = ({ title, url }: Props) => {
                         </div>
                       </div>
                       <img
-                        src={
-                          movie.backdrop_path
-                            ? `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`
-                            : noPosterHorizontal
-                        }
+                        src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                         alt="movie poster"
                         className=" max-w-full w-full align-middle"
                       />

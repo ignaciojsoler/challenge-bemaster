@@ -22,7 +22,6 @@ const Navbar = () => {
     navigate("/");
   };
 
-  //TODO - Do this nav responsive
   return (
     <nav className=" from-black to-transparent bg-gradient-to-b w-full relative z-50">
       <div className="container m-auto flex justify-between items-center py-6 px-6 lg:px-14">

@@ -26,7 +26,7 @@ const ContentCategory = () => {
             title={"Clásicos"}
             url={requests.fetchDisneyClassics}
           />
-          <CategoryCarousel title={"Novedades"} url={requests.fetchDisneySeries} />
+          <CategoryCarousel title={"Novedades"} url={requests.fetchDisneyNews} />
         </>
       )}
       {currentCategory.name === "pixar" && (
@@ -40,7 +40,7 @@ const ContentCategory = () => {
         <>
           <CategoryCarousel
             title={"Universo de Marvel"}
-            url={requests.fetchMarvelPhases}
+            url={requests.fetchMarvel}
           />
           <CategoryCarousel
             title={"Universo de Marvel: Fase uno"}

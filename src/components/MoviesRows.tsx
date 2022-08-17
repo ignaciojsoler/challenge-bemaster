@@ -15,7 +15,7 @@ const MoviesRows = () => {
       />
       <CategoryCarousel
         title={"Universo de Marvel"}
-        url={requests.fetchMarvelPhases}
+        url={requests.fetchMarvel}
       />
       <CategoryCarousel
         title={"Colección de Star Wars"}

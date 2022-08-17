@@ -6,8 +6,8 @@ import { setCategory } from "../features/user/categorySlice";
 
 const Cards = () => {
   //Consts
-    const navigate = useNavigate()
-    const dipsatch = useAppDispatch()
+  const navigate = useNavigate()
+  const dipsatch = useAppDispatch()
   const data = [
     {
       brand: "disney",
@@ -51,6 +51,7 @@ const Cards = () => {
     dipsatch(setCategory({name: cardCategory}))
     navigate(`/category/${cardCategory}`)
   }
+  
   return (
     <section className=" mt-15 mb-8">
       <div className="grid grid-cols-3 gap-4 sm:grid-cols-5">
