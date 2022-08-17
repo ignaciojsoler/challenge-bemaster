@@ -37,7 +37,7 @@ const ContentDetails = () => {
           className="sm:w-full sm:fixed lg:object-cover lg:h-full xl:object-cover"
         />
       </div>
-      <div className="relative mx-auto z-10 text-white pt-6 pb-10 space-y-6 w-full sm:pt-60 sm:pl-10">
+      <div className="relative mx-auto z-10 text-white pt-6 pb-10 space-y-6 px-6 w-full sm:pt-60 sm:pl-6 sm:px-0 lg:pl-10">
         <h1 className="text-4xl font-semibold ">{movie?.title}</h1>
         <div className="space-y-4 sm:space-x-4 sm:space-y-0">
           <button className="w-full font-semibold py-4 rounded bg-white text-black border-2 border-white transition sm:w-auto sm:px-8 hover:bg-seccondary hover:border-seccondary">
