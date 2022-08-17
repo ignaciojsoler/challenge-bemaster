@@ -29,6 +29,6 @@
 - React Slick
 - Sweetalert 2
 
-###Captura:
+### Vista previa:
 ![captura](https://user-images.githubusercontent.com/70725223/185155674-76b4ec2d-b154-4e56-9b60-55df4ca71164.png)
 
