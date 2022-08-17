@@ -1,6 +1,7 @@
 # Prueba técnica de desarrollo Frontend para BeMaster
 
-¡Hola! Este es la aplicación web inspirada en Disney+ que desarrollé con React JS para el reto de BeMaster. *Podes visitar el sitio web haciendo click aquí*: https://ignaciojsoler.github.io/challenge-bemaster/
+¡Hola! Este es la aplicación web inspirada en Disney+ que desarrollé con React JS para el reto de BeMaster. 
+**Podes visitar el sitio web haciendo click aquí**: https://ignaciojsoler.github.io/challenge-bemaster/
 
 ### Características funcionales:
 - Componente ‘Login’ donde el usuario puede registrarse e iniciar sesión utilizando el Authent de Firebase. El resto de las rutas están configuradas para redireccionar al usuario hacia este componente si no se encuentra logueado.
