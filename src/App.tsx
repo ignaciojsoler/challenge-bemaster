@@ -16,7 +16,7 @@ function App() {
       {isLoggedIn && <Navbar />}
       <ScrollToTop>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/*" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/category/:brand" element={<ContentCategory />} />
           <Route path="/details" element={<ContentDetails />} />
