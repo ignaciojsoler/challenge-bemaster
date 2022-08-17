@@ -1,6 +1,7 @@
 # Prueba técnica de desarrollo Frontend para BeMaster
 
-¡Hola! Este es la aplicación web inspirada en Disney+ que desarrollé con React JS para el reto de BeMaster. 
+¡Hola! Este es la aplicación web inspirada en Disney+ que desarrollé con React JS para el reto de BeMaster.
+
 **Podes visitar el sitio web haciendo click aquí**: https://ignaciojsoler.github.io/challenge-bemaster/
 
 ### Características funcionales:
@@ -27,3 +28,7 @@
 - Tailwind CSS
 - React Slick
 - Sweetalert 2
+
+###Captura:
+![captura](https://user-images.githubusercontent.com/70725223/185155674-76b4ec2d-b154-4e56-9b60-55df4ca71164.png)
+
