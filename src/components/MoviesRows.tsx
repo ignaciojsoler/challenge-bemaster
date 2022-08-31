@@ -21,10 +21,6 @@ const MoviesRows = () => {
         title={"Colección de Star Wars"}
         url={requests.fetchStarWars}
       />
-      <CategoryCarousel
-        title={"Documentales"}
-        url={requests.fetchNationalGeographic}
-      />
     </div>
   );
 };
