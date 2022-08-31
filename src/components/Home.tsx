@@ -1,5 +1,4 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useAppSelector } from "../hooks/redux";
 import { useNavigate } from "react-router";
 import MainSlider from "./MainSlider";

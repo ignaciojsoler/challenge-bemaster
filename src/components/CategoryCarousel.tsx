@@ -57,17 +57,16 @@ const CategoryCarousel = ({ title, url }: Props) => {
     try {
       const baseURL = 'https://api.themoviedb.org/3/'
       const { data } = await axios.get(baseURL + url);
-      setMovies(data.items.slice(0,12));
-      setIsLoading(false);
+      setMovies(await data.items.slice(0,8));
     } catch (err) {
       console.log("hubo un error: ", err);
     }
+    setIsLoading(false);
   };
   const navigateToDetails = (movieId: number) => {
     dispatch(setMovie(movieId));
     navigate(`/details?movieID=${movieId}`);
   };
-
   //UseEffect
   useEffect(() => {
     getMovies();
