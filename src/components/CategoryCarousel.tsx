@@ -104,6 +104,7 @@ const CategoryCarousel = ({ title, url }: Props) => {
                         src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                         alt="movie poster"
                         className=" max-w-full w-full align-middle"
+                        loading="lazy"
                       />
                     </div>
                   }
