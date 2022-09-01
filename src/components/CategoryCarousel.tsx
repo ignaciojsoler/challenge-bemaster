@@ -54,19 +54,23 @@ const CategoryCarousel = ({ title, url }: Props) => {
 
   //Functions
   const getMovies = async (): Promise<void> => {
+    let i = 0
+    console.log('hey', i++);
     try {
       const baseURL = 'https://api.themoviedb.org/3/'
       const { data } = await axios.get(baseURL + url);
-      setMovies(await data.items.slice(0,8));
+      setMovies(data.items.slice(0,8));
     } catch (err) {
       console.log("hubo un error: ", err);
     }
     setIsLoading(false);
   };
+
   const navigateToDetails = (movieId: number) => {
     dispatch(setMovie(movieId));
     navigate(`/details?movieID=${movieId}`);
   };
+
   //UseEffect
   useEffect(() => {
     getMovies();
@@ -104,7 +108,6 @@ const CategoryCarousel = ({ title, url }: Props) => {
                         src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                         alt="movie poster"
                         className=" max-w-full w-full align-middle"
-                        loading="lazy"
                       />
                     </div>
                   }
