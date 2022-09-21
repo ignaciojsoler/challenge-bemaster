@@ -1,10 +1,11 @@
 import React from "react";
-import CategoryCarousel from "../components/CategoryCarousel";
 import requests from "../requests";
+import Loading from "./Loading";
+const CategoryCarousel = React.lazy(() => import('../components/CategoryCarousel'))
 
 const MoviesRows = () => {
   return (
-    <div>
+    <React.Suspense fallback={<Loading/>}>
       <CategoryCarousel
         title={"Originales de Disney"}
         url={requests.fetchDisney}
@@ -21,7 +22,7 @@ const MoviesRows = () => {
         title={"Colección de Star Wars"}
         url={requests.fetchStarWars}
       />
-    </div>
+    </React.Suspense>
   );
 };
 

@@ -59,7 +59,7 @@ const CategoryCarousel = ({ title, url }: Props) => {
     try {
       const baseURL = 'https://api.themoviedb.org/3/'
       const { data } = await axios.get(baseURL + url);
-      setMovies(data.items.slice(0,8));
+      setMovies(data.items.slice(0,5));
     } catch (err) {
       console.log("hubo un error: ", err);
     }
@@ -77,7 +77,7 @@ const CategoryCarousel = ({ title, url }: Props) => {
   }, []);
 
   return (
-    <div className="">
+    <div>
       {!isLoading ? (
         <div className="py-3 space-y-3 w-full">
           <h3
@@ -108,6 +108,7 @@ const CategoryCarousel = ({ title, url }: Props) => {
                         src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                         alt="movie poster"
                         className=" max-w-full w-full align-middle"
+                        loading="lazy"
                       />
                     </div>
                   }
